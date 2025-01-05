@@ -44,17 +44,17 @@
             <!-- Tombol Tambah Produk -->
             @auth
             <div class="d-flex justify-content-end mb-3">
-            <button class="btn btn-sm tombol-tambah-produk" data-bs-toggle="modal" data-bs-target="#productModal">
-                Tambah Produk
-            </button>
-            <!-- Tombol Detail Transaksi -->
-            <a href="{{ route('transaksi') }}" class="btn btn-sm tombol-detail-transaksi ms-2">
-                Detail Transaksi
-            </a>
-            <!-- Tombol Riwayat Transaksi -->
-            <a href="{{ route('riwayat.transaksi') }}" class="btn btn-sm tombol-riwayat-transaksi ms-2">
-                Riwayat Transaksi
-            </a>
+                <button class="btn btn-sm tombol-tambah-produk" data-bs-toggle="modal" data-bs-target="#productModal">
+                    Tambah Produk
+                </button>
+                <!-- Tombol Detail Transaksi -->
+                <a href="{{ route('transaksi') }}" class="btn btn-sm tombol-detail-transaksi ms-2">
+                    Detail Transaksi
+                </a>
+                <!-- Tombol Riwayat Transaksi -->
+                <a href="{{ route('riwayat.transaksi') }}" class="btn btn-sm tombol-riwayat-transaksi ms-2">
+                    Riwayat Transaksi
+                </a>
             </div>
             @endauth
 
@@ -91,6 +91,32 @@
                 @endforeach
             </div>
         </div>
+
+        @foreach ($jaket as $product)
+        <div class="modal fade" id="deleteProductModal{{ $product->id }}" tabindex="-1" aria-labelledby="deleteProductModalLabel{{ $product->id }}" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deleteProductModalLabel{{ $product->id }}">Konfirmasi Hapus</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Apakah Anda yakin ingin menghapus produk <strong>{{ $product->name }}</strong>?
+                    </div>
+                    <!-- Modal Konfirmasi Hapus Produk -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn-batal-modal" data-bs-dismiss="modal">Batal</button>
+                        <form action="{{ route('products.destroy', $product->id) }}" method="POST" class="d-inline">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn-hapus-modal">Hapus</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        @endforeach
 
         <!-- Modal Order Sekarang -->
         <div class="modal fade" id="orderModal{{ $product->id }}" tabindex="-1" aria-labelledby="orderModalLabel{{ $product->id }}" aria-hidden="true">
