@@ -1,0 +1,430 @@
+body {
+    background-image: url('../assets/IMAGE/bgdashboard.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.card {
+    border: none; 
+    background-color: rgba(255, 255, 255, 0.5); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease;
+}
+
+.card img {
+    height: 300px; 
+    object-fit: cover; 
+}
+
+.card-body {
+    padding: 15px;
+    background-color: #7979793c; 
+    text-align: center; 
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ffffff; /* Warna teks utama */
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #ffffff; 
+    margin-bottom: 10px;
+}
+
+.btn-warning {
+    background-color: #f0ad4e;
+    color: #fff;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #ec971f;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c9302c;
+    color: #fff;
+}
+
+.btn-success {
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #4cae4c;
+    color: #fff;
+}
+
+.row .col-md-4 {
+    margin-bottom: 20px;
+}
+
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #343a40;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: #adb5bd;
+    padding: 10px 0;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.sidebar a:hover {
+    color: #fff;
+    background-color: #495057;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.text-center{
+    color: white;
+    padding-bottom: 10px;
+}
+/* Konten Utama */
+.content {
+    margin-left: 220px;
+    padding: 20px;
+    background-color: #1510100d;
+    min-height: 100vh;
+}
+
+.btn-batal-modal {
+    background-color: #1ec500;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-batal-modal:hover {
+    background-color: #5a6268;
+}
+
+.modal-footer .btn-hapus-modal {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.modal-footer .btn-hapus-modal:hover {
+    background-color: #c82333;
+}
+
+.modal-footer {
+    display: flex;
+    padding: 15px;
+}
+
+.modal-footer button {
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 16px;
+}
+
+/* Tombol Umum */
+.btn {
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    z-index: 9999;  
+}
+
+
+/* Tombol Tambah Produk */
+.btn-add {
+    background-color: #28a745; 
+    color: white;
+    border: none;
+}
+
+.btn-add:hover {
+    background-color: #218838; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Tombol Detail Transaksi */
+.btn-info {
+    background-color: #17a2b8; 
+    color: white;
+    border: none;
+}
+
+.btn-info:hover {
+    background-color: #138496; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Tombol Riwayat Transaksi */
+.btn-secondary {
+    background-color: #7d706c; 
+    color: white;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Tombol-tombol dalam satu baris */
+.d-flex {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 0px; 
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 576px) {
+    .d-flex {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .btn {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+}
+
+
+/* Tabel Produk */
+#productTable {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#productTable p {
+    font-style: italic;
+    color: #6c757d;
+}
+
+.search-container {
+    max-width: 500px;
+    margin-left: auto; 
+    margin-left: 0; 
+    display: block;  
+}
+
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #9d9d9d75;
+}
+
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #9d9d9d75;
+    color: white;
+    border: none;
+    padding-bottom: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color:#dcdcdc75;
+}
+
+
+
+/* Styling untuk Modal */
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: #494949;
+    color: white;
+}
+
+.form-label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #494949;
+    border-color: #494949;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+    transition: all 0.3s ;
+}
+
+.checkmark-wrapper svg {
+    animation: checkmark-draw 1s ease-out forwards;
+}
+
+@keyframes checkmark-draw {
+    0% {
+        stroke-dasharray: 0, 100;
+        stroke-dashoffset: 100;
+    }
+    100% {
+        stroke-dasharray: 100, 0;
+        stroke-dashoffset: 0;
+    }
+    
+
+}
+
+a.active {
+    background-color: #a6a6a6; /* Warna background aktif */
+    color: white; /* Warna teks aktif */
+    padding: 5px 10px; /* Padding untuk tampilan lebih baik */
+    border-radius: 5px; /* Membuat sudut membulat */
+    text-decoration: none; /* Hilangkan garis bawah */
+}
+
+
+.button-container {
+    gap: 10px; /* Menentukan jarak antar tombol, bisa diubah sesuai kebutuhan */
+}
+
+.modal-body .btn-simpan{
+    background-color: green; /* Mengatur background warna hijau */
+    color: white; /* Mengatur warna teks menjadi putih */
+    border: none; /* Menghilangkan border tombol */
+    padding: 10px 20px; /* Menambahkan padding untuk tombol */
+    border-radius: 5px; /* Membuat sudut tombol melengkung */
+    font-size: 16px; /* Mengatur ukuran font tombol */
+    transition: all 0.3s ease; /* Menambahkan animasi pada hover */
+}
+
+.modal-body .btn-simpan:hover {
+    background-color: darkgreen; /* Mengubah warna saat hover */
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropdown-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    /* Adjust the distance from the right edge */
+    transform: translateY(-50%);
+    pointer-events: none;
+    /* Ensures it doesn't interfere with the dropdown */
+}
+
+.d-flex {
+    display: flex;
+    justify-content: flex-end; /* Agar tombol berada di sebelah kanan */
+    gap: 10px; /* Memberikan jarak antar tombol */
+}
+
+.tombol-tambah-produk {
+    background-color: #28a745; /* Warna tombol untuk Tambah Produk */
+    color: #fff; /* Warna teks putih */
+    border-radius: 5px; /* Sudut tombol yang melengkung */
+    padding: 5px 10px; /* Padding tombol */
+    border: none; /* Menghilangkan border */
+    transition: background-color 0.3s ease; /* Animasi perubahan warna */
+}
+
+.tombol-tambah-produk:hover {
+    background-color: #1b7731; /* Warna saat hover */
+}
+
+.tombol-detail-transaksi{
+        background-color: #959595;
+        color: #fff; /* Warna teks putih */
+        border-radius: 5px; /* Sudut tombol yang melengkung */
+        padding: 5px 10px; /* Padding tombol */
+        border: none; /* Menghilangkan border */
+        transition: background-color 0.3s ease; /* Animasi perubahan warna */
+    
+}
+.tombol-riwayat-transaksi {
+    background-color: #0074ae; 
+    color: #fff; /* Warna teks putih */
+    border-radius: 5px; /* Sudut tombol yang melengkung */
+    padding: 5px 10px; /* Padding tombol */
+    border: none; /* Menghilangkan border */
+    transition: background-color 0.3s ease; /* Animasi perubahan warna */
+}
+
+.tombol-detail-transaksi:hover{
+    background-color: #6e6e6e; /* Warna saat hover untuk tombol Detail dan Riwayat */
+}
+.tombol-riwayat-transaksi:hover {
+    background-color: #005580; /* Warna saat hover untuk tombol Detail dan Riwayat */
+}
+
+.tombol-tambah-produk:focus,
+.tombol-detail-transaksi:focus,
+.tombol-riwayat-transaksi:focus {
+    outline: none;
+}
