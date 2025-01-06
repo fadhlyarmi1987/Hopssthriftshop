@@ -339,30 +339,30 @@ button[type="submit"]:hover {
 }
 
 a.active {
-    background-color: #a6a6a6; /* Warna background aktif */
-    color: white; /* Warna teks aktif */
-    padding: 5px 10px; /* Padding untuk tampilan lebih baik */
-    border-radius: 5px; /* Membuat sudut membulat */
-    text-decoration: none; /* Hilangkan garis bawah */
+    background-color: #a6a6a6;
+    color: white; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    text-decoration: none;
 }
 
 
 .button-container {
-    gap: 10px; /* Menentukan jarak antar tombol, bisa diubah sesuai kebutuhan */
+    gap: 10px; 
 }
 
 .modal-body .btn-simpan{
-    background-color: green; /* Mengatur background warna hijau */
-    color: white; /* Mengatur warna teks menjadi putih */
-    border: none; /* Menghilangkan border tombol */
-    padding: 10px 20px; /* Menambahkan padding untuk tombol */
-    border-radius: 5px; /* Membuat sudut tombol melengkung */
-    font-size: 16px; /* Mengatur ukuran font tombol */
-    transition: all 0.3s ease; /* Menambahkan animasi pada hover */
+    background-color: green; 
+    color: white; 
+    border: none;
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    transition: all 0.3s ease;
 }
 
 .modal-body .btn-simpan:hover {
-    background-color: darkgreen; /* Mengubah warna saat hover */
+    background-color: darkgreen; 
 }
 
 .dropdown {
@@ -373,54 +373,52 @@ a.active {
     position: absolute;
     top: 50%;
     right: 10px;
-    /* Adjust the distance from the right edge */
     transform: translateY(-50%);
     pointer-events: none;
-    /* Ensures it doesn't interfere with the dropdown */
 }
 
 .d-flex {
     display: flex;
-    justify-content: flex-end; /* Agar tombol berada di sebelah kanan */
-    gap: 10px; /* Memberikan jarak antar tombol */
+    justify-content: flex-end;
+    gap: 10px;
 }
 
 .tombol-tambah-produk {
-    background-color: #28a745; /* Warna tombol untuk Tambah Produk */
-    color: #fff; /* Warna teks putih */
-    border-radius: 5px; /* Sudut tombol yang melengkung */
-    padding: 5px 10px; /* Padding tombol */
-    border: none; /* Menghilangkan border */
-    transition: background-color 0.3s ease; /* Animasi perubahan warna */
+    background-color: #28a745;
+    color: #fff; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    border: none; 
+    transition: background-color 0.3s ease; 
 }
 
 .tombol-tambah-produk:hover {
-    background-color: #1b7731; /* Warna saat hover */
+    background-color: #1b7731; 
 }
 
 .tombol-detail-transaksi{
         background-color: #959595;
-        color: #fff; /* Warna teks putih */
-        border-radius: 5px; /* Sudut tombol yang melengkung */
-        padding: 5px 10px; /* Padding tombol */
-        border: none; /* Menghilangkan border */
-        transition: background-color 0.3s ease; /* Animasi perubahan warna */
+        color: #fff; 
+        border-radius: 5px; 
+        padding: 5px 10px; 
+        border: none; 
+        transition: background-color 0.3s ease; 
     
 }
 .tombol-riwayat-transaksi {
     background-color: #0074ae; 
-    color: #fff; /* Warna teks putih */
-    border-radius: 5px; /* Sudut tombol yang melengkung */
-    padding: 5px 10px; /* Padding tombol */
-    border: none; /* Menghilangkan border */
-    transition: background-color 0.3s ease; /* Animasi perubahan warna */
+    color: #fff; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    border: none;
+    transition: background-color 0.3s ease; 
 }
 
 .tombol-detail-transaksi:hover{
-    background-color: #6e6e6e; /* Warna saat hover untuk tombol Detail dan Riwayat */
+    background-color: #6e6e6e;
 }
 .tombol-riwayat-transaksi:hover {
-    background-color: #005580; /* Warna saat hover untuk tombol Detail dan Riwayat */
+    background-color: #005580;
 }
 
 .tombol-tambah-produk:focus,
