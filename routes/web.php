@@ -20,10 +20,8 @@ Route::get('/logout', function () {
     Auth::logout();
     return redirect('/login');
 });
-
-// Dashboard Routes
 Route::get('/', function () {
-    return redirect()->route('dashboard'); // Mengarahkan ke dashboard saat pertama kali mengakses
+    return redirect()->route('dashboard');
 });
 
 Route::get('/dashboard', function () {
